@@ -1,1 +1,35 @@
-
+<!doctype html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trex Gallery — Admin</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">🦖 Trex Gallery — Admin</div>
+    <a class="admin-link" href="/">Gallery</a>
+  </header>
+  <main class="admin">
+    <div class="card">
+      <h2>Admin Login</h2>
+      <input id="email" type="email" placeholder="Admin email" autocomplete="username">
+      <input id="password" type="password" placeholder="Password" autocomplete="current-password">
+      <button id="login">Login</button>
+      <p id="loginMsg"></p>
+    </div>
+    <div id="panel" class="card hidden">
+      <h2>📤 Upload Image</h2>
+      <input id="file" type="file" accept="image/*">
+      <button id="upload">Upload</button>
+      <button id="logout" class="secondary">Logout</button>
+      <p id="msg"></p>
+      <hr>
+      <h2>🖼️ Manage Images</h2>
+      <div id="adminList" class="admin-list"></div>
+    </div>
+  </main>
+  <script type="module" src="/admin.js"></script>
+</body>
+</html>
